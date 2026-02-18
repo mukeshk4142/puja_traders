@@ -16,7 +16,7 @@ const LoginPage = () => {
     e.preventDefault();
     setLoading(true);
     setError('');
-    
+
     try {
       // Firebase real login
       await signInWithEmailAndPassword(auth, identifier, password);
@@ -32,7 +32,7 @@ const LoginPage = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50 py-24 px-4 sm:px-6 lg:px-8">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         className="max-w-md w-full"
@@ -51,11 +51,11 @@ const LoginPage = () => {
         </div>
 
         <div className="bg-white p-10 rounded-[2.5rem] shadow-2xl shadow-slate-200 border border-slate-100">
-          
+
           <form onSubmit={handleLogin} className="space-y-6">
             <AnimatePresence>
               {error && (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
@@ -121,11 +121,11 @@ const LoginPage = () => {
               <a href="#" className="text-sm font-bold text-emerald-600 hover:text-emerald-700 transition-colors">Forgot PIN?</a>
             </div>
 
-            <button 
+            <button
               disabled={loading}
               className={`w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-2xl transition-all shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-2 group ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
             >
-              {loading ? 'Verifying...' : 'Sign In'} 
+              {loading ? 'Verifying...' : 'Sign In'}
               {!loading && <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />}
             </button>
           </form>
