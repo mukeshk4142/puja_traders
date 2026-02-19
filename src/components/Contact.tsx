@@ -34,7 +34,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-emerald-400 font-bold uppercase tracking-wider mb-1">Call Us</p>
-                  <p className="text-xl font-semibold">+91 98765 43210</p>
+                  <p className="text-xl font-semibold">+91 6200372107</p>
                 </div>
               </div>
 
@@ -44,7 +44,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-emerald-400 font-bold uppercase tracking-wider mb-1">Email Us</p>
-                  <p className="text-xl font-semibold">contact@pujatraders.com</p>
+                  <p className="text-xl font-semibold">vikashrana4142@gmail.com</p>
                 </div>
               </div>
 
@@ -54,7 +54,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-emerald-400 font-bold uppercase tracking-wider mb-1">Visit Us</p>
-                  <p className="text-xl font-semibold">123 Agriculture Market, City Plaza, Bihar</p>
+                  <p className="text-xl font-semibold">Pundri, Hazaribagh, Ranchi Jharkhand - 825301</p>
                 </div>
               </div>
             </div>
