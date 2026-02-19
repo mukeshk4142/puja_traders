@@ -21,7 +21,7 @@ const LoginPage = () => {
       // Firebase real login
       await signInWithEmailAndPassword(auth, identifier, password);
       setError('');
-      navigate('/admin/dashboard'); // Ya jo bhi aapka admin route hai
+      navigate('/dashboard'); // Ya jo bhi aapka admin route hai
     } catch (err: any) {
       console.error(err);
       setError('Invalid Email or Security PIN. Please check your credentials.');

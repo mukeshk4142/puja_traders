@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate, Outlet } from 'react-router-dom';
+import { signOut } from 'firebase/auth'; // Ye upar add karein
+import { auth } from '../firebase'; // Ye bhi add karein
 import { 
   LayoutDashboard, 
   Users, 
@@ -29,10 +31,15 @@ const DashboardLayout = () => {
     { name: 'Manage Gallery', icon: <ImageIcon size={20} />, path: '/dashboard/manage-gallery' },
   ];
 
-  const handleLogout = () => {
+  // handleLogout ko aise badlein:
+const handleLogout = async () => {
+  try {
+    await signOut(auth);
     navigate('/login');
-  };
-
+  } catch (error) {
+    console.error("Logout failed", error);
+  }
+};
   return (
     <div className="min-h-screen bg-slate-50 flex">
       {/* Sidebar */}
