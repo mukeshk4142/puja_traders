@@ -1,5 +1,5 @@
 
-
+import visionaryImg from '../assets/owner.jpg'; // Apni file ka sahi naam likhein
 import { motion } from 'framer-motion';
 import { User, Award, ShieldCheck, HeartPulse } from 'lucide-react';
 
@@ -24,8 +24,8 @@ const About = () => {
           >
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
               <img 
-                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Agriculture Professional" 
+                src={visionaryImg} 
+                alt="Mr. Vikash Kumar Rana" 
                 className="w-full h-[500px] object-cover"
               />
             </div>
